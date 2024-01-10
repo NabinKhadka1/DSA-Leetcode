@@ -19,19 +19,19 @@
 // Indices 1, 2, and 4 have k = 1 set bits in their binary representation.
 // Hence, the answer is nums[1] + nums[2] + nums[4] = 13.
 
-var sumIndicesWithKSetBits = function (nums, k) {
-  let sum = 0;
-  for (let i = 0; i < nums.length; i++) {
-    const binaryRepr = i.toString(2);
-    let count = 0;
-    for (let j = 0; j < binaryRepr.length; j++) {
-      if (binaryRepr[j] === "1") {
-        count++;
-      }
+var sumIndicesWithKSetBits = function(nums, k) {
+    let sum = 0;
+    for(let i=0; i<nums.length; i++){
+        const binaryRepr = i.toString(2);
+        let count = 0;
+        for(let j=0; j< binaryRepr.length; j++){
+            if(binaryRepr[j] === '1'){
+                count++;
+            }
+        }
+        if(count === k){
+            sum += nums[i]
+        }
     }
-    if (count === k) {
-      sum += nums[i];
-    }
-  }
-  return sum;
+    return sum;
 };
