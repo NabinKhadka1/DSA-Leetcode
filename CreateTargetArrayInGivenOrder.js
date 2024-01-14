@@ -19,6 +19,7 @@
 // 3            2        [0,1,3,2]
 // 4            1        [0,4,1,3,2]
 
+
 var createTargetArray = function(nums, index) {
     let targetArray = [];
     for(let i=0; i<nums.length; i++){
