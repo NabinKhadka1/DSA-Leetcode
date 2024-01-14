@@ -19,7 +19,10 @@
 // 3            2        [0,1,3,2]
 // 4            1        [0,4,1,3,2]
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> aa24ca06edf0674c045ce720e1d4425c209563c5
 var createTargetArray = function(nums, index) {
     let targetArray = [];
     for(let i=0; i<nums.length; i++){
